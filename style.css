@@ -124,21 +124,20 @@ height:auto;
 }
 
 #gallery .grid{
-padding:5px 0 0;
+padding:3px 0 0;
 border:0;
 }
 
 #footer{
 clear:both;
-padding:5px 0;
+padding:3px 0;
 overflow:hidden;
-background:#AD3140;
 }
 
 .copyright{
 font-size:12px;
 text-align: center;
-color: white;
+color: #000000;
 }
 
 
@@ -334,17 +333,19 @@ color: white;
 
 /*スマートフォン*/
 @media only screen and (max-width:640px){
-	#footer .grid p{
-	text-align:center;
+
+	h3.heading{
+	font-size:18px;
 	}
-	
+
+	section.content{
+	font-size:12px;
+	}
+
+
 	.grid img{
 	float:none;
 	margin:0 auto;
-	}
-	
-	.grid p,#sub .grid li{
-	text-align:left;
 	}
 }
 
