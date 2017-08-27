@@ -334,6 +334,11 @@ color: #000000;
 /*スマートフォン*/
 @media only screen and (max-width:640px){
 
+	#footer .grid p{
+		text-align:center;
+	}
+		
+
 	h3.heading{
 	font-size:18px;
 	}
@@ -346,6 +351,10 @@ color: #000000;
 	.grid img{
 	float:none;
 	margin:0 auto;
+	}
+
+	.grid p,#sub .grid li{
+		text-align:left;
 	}
 }
 
