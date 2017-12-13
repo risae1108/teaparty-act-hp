@@ -1,16 +1,9 @@
 @charset "utf-8";
 
-/*全体設定*/
+$font: "YuGothic", "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro","メイリオ","Meiryo","sans-serif";
+
 ol, ul {
     list-style: none;
-}
-
-blockquote:before, blockquote:after,q:before, q:after {
-    content: "";
-}
-
-blockquote, q {
-    quotes: "" "";
 }
 
 a img{
@@ -26,18 +19,17 @@ article, figure, footer, header, menu, nav, section {
 }
 
 body{
-	color:#333;
-	font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN", Sans-Serif;
-	line-height:1.5;
-	background:#fffafa;
-	-webkit-text-size-adjust: none;
+	color: #333;
+	font-family: $font;
+	line-height: 1.5;
+	background: #fffafa;
 }
 
 a{
-    color:#555;
-    text-decoration:none;
+    color: #555;
 }
 
+/*loader*/
 .no-js #loader{
 	display: none;
 }
@@ -60,125 +52,129 @@ a{
 }
 
 #wrapper{
-margin:0 auto;
-padding:0 1%;
-width:95%;
-position:relative;
+	margin:0 auto;
+	padding:0 1%;
+	width:95%;
+	position:relative;
+	a{
+		color: #AD3140;
+	}
 }
 
 .inner{
-margin:0 auto;
-width:100%;
+	margin:0 auto;
+	width:100%;
 }
 
 /*ヘッダー*/
 #header{
-padding:10px 0 15px;
-overflow:hidden;
-height:1%;
+	padding:10px 0 15px;
+	overflow:hidden;
+	a{
+		text-decoration: none;
+	}
 }
 
 #header .logo{
-float:left;
-padding:20px 0 0;
+	float:left;
+	padding:20px 0 0;
 }
 
 /*ロゴ*/
 .logo a{
-font-size:20px;
-font-weight:bold;
-line-height:1;
+	font-size:20px;
+	font-weight:bold;
+	line-height:1;
 }
 
 .logo span{
-font-size:12px;
-font-weight:normal;
+	font-size:12px;
+	font-weight:normal;
 }
 
 /*トップ画像*/
 #mainBanner{
-margin:10px auto;
-padding:0;
-width:100%;
-position:relative;
+	margin:10px auto;
+	padding:0;
+	width:100%;
+	position:relative;
 }
 
 #mainBanner img{
-max-width:100%;
-padding:1px;
+	max-width:100%;
 }
 
 .gridWrapper{
-padding-bottom:10px;
-overflow: hidden;
+	padding-bottom:10px;
+	overflow: hidden;
 }
 	
 .grid{
-float:left;
+	float:left;
 }
 
 .grid p{
-padding:5px 10px;
-text-align:left;
+	padding:5px 10px;
+	text-align:left;
 }
 
 .gridWrapper img{
-max-width:100%;
-height:auto;
-margin-bottom:10px;
-padding:1px;
-border:2px solid #ccc;
+	max-width:100%;
+	height:auto;
+	margin-bottom:10px;
+	padding:1px;
+	border:2px solid #ccc;
 }
 
-.big {
-font-size: 18px;
+.content-head {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #footer .grid{
-color:#fff;
-background:transparent;
+	color:#fff;
+	background:transparent;
 }
 
 section.content{
-padding:10px 0;
-margin-bottom:20px;
-border-radius:6px;
-overflow:hidden;
-font-size:14px;
+	padding:10px 0;
+	margin-bottom:20px;
+	border-radius:6px;
+	overflow:hidden;
+	font-size:14px;
 }
 
 section.content p{
-margin-bottom:5px;
+	margin-bottom:5px;
 }
 
 h3.heading{
-padding-bottom:5px;
-margin-bottom:10px;
-font-size:24px;
-border-bottom:3px solid #AD3140;
-color:#555;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	font-size:24px;
+	border-bottom:3px solid #AD3140;
+	color:#555;
 }
 
 section.content img{
-max-width:90%;
-height:auto;
+	max-width:90%;
+	height:auto;
 }
 
 #gallery .grid{
-padding:3px 0 0;
-border:0;
+	padding:3px 0 0;
+	border:0;
 }
 
 #footer{
-clear:both;
-padding:3px 0;
-overflow:hidden;
+	clear:both;
+	padding:3px 0;
+	overflow:hidden;
 }
 
 .copyright{
-font-size:12px;
-text-align: center;
-color: #000000;
+	font-size:12px;
+	text-align: center;
 }
 
 
@@ -221,24 +217,35 @@ color: #000000;
 	border-color:#AD3140;
 	}
 	
-	#mainBanner img{max-width:936px;}
+	#mainBanner img{
+		max-width:936px;
+	}
 	
 	.gridWrapper{
-	width:960px;
-	margin:0 0 0 -20px;
+		width:960px;
+		margin:0 0 0 -20px;
 	}
 	
 	.grid{
-	float:left;
-	width:218px;
-	margin-left:20px;
+		float:left;
+		width:218px;
+		margin-left:20px;
 	}
 	
-	#sub .grid, #footer .grid{width:298px;}
-	#footer .grid{border:0;}
+	#sub .grid, #footer .grid{
+		width:298px;
+	}
+
+	#footer .grid{
+		border:0;
+	}
 	
-	#gallery{margin-left:-10px;}
-  #gallery .grid{width:220px;}	
+	#gallery{
+		margin-left:-10px;
+	}
+  	#gallery .grid{
+	  width:220px;
+	}	
 }
 
 @media only screen and (max-width:960px){
@@ -389,9 +396,11 @@ color: #000000;
 	}
 
 
-	.grid img{
-	float:none;
-	margin:0 auto;
+	.grid{
+		img{
+			float:none;
+			margin:0 auto;
+		}
 	}
 
 	.grid p,#sub .grid li{
